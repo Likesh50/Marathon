@@ -46,17 +46,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2 search-input"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success search-btn" type="submit">
-              Search
-            </button>
-          </form>
+          
         </div>
       </div>
     </nav>

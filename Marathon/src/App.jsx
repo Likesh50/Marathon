@@ -9,8 +9,10 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <Hero/>
+      <div style={{display:"flex", flexDirection:"column"}}>
+        <Navbar/>
+        <Hero/>
+      </div>
     </>
   )
 }
