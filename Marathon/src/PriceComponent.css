@@ -1,0 +1,51 @@
+.exclusive-items {
+    text-align: center;
+    padding: 40px; /* Increased padding for a better look */
+    background-color: #f5f9ff; /* Light background color */
+    border-radius: 15px; /* Soft corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .items-grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .logo {
+    width: 80px; /* Adjust the size of the logos */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom on hover */
+  }
+  
+  /* Zoom effect on hover */
+  .item:hover .logo {
+    transform: scale(1.1); /* Zoom in slightly */
+  }
+  
+  .item:hover p {
+    color: #0077cc; /* Change text color on hover */
+  }
+  
+  /* For laptop and larger devices */
+  @media (min-width: 1024px) {
+    .items-grid {
+      grid-template-columns: repeat(4, 1fr); /* 4 items in a row */
+    }
+  }
+  
+  /* For phones */
+  @media (max-width: 600px) {
+    .items-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+  }
+  
