@@ -4,14 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Pages/Navbar'
 import Hero from './Pages/Hero'
+import PriceComponent from './Pages/PriceComponent'
 
 function App() {
 
   return (
-    <>ihn
+    <>
       <div style={{display:"flex", flexDirection:"column"}}>
         <Navbar/>
         <Hero/>
+        <PriceComponent/>
       </div>
     </>
   )

@@ -31,9 +31,7 @@
     transform: scale(1.1); /* Zoom in slightly */
   }
   
-  .item:hover p {
-    color: #0077cc; /* Change text color on hover */
-  }
+
   
   /* For laptop and larger devices */
   @media (min-width: 1024px) {
