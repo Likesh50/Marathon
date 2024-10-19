@@ -1,87 +1,181 @@
+/* Base container styles */
 .about-marathon-container {
     display: flex;
     justify-content: center;
-    padding: 0; /* Removed padding for the container to utilize full width */
-    background-color: #f5f5f5; /* Background color for the container */
+    padding: 20px;
 }
 
+/* Flexbox layout with max width */
 .about-marathon {
     display: flex;
-    align-items: flex-start; /* Align items to the start for laptops */
-    max-width: 100%; /* Full width */
-    background-color: white; /* White background for the content */
-    overflow: hidden; /* Prevent overflow */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-/* Image Styling */
+/* Image styling */
 .marathon-image img {
-    width: 75%; /* Full width for the image */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover for the best fit */
-    border-radius: 8px 0 0 8px; /* Rounded corners for image */
-   
+    width: 70%; /* Larger image for larger screens */
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px; /* Smooth rounded corners */
 }
 
-/* Content Styling */
+/* Content styling */
 .about-content {
-    padding: 20px; /* Padding for content */
-    max-width: 100%; /* Full width for content */
-    text-align: left; /* Left align text for laptops */
+    padding: 40px;
+    max-width: 40%; /* Adjusted to balance with image */
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Main heading styling */
 .about-content h1 {
-    font-size: 2.5em; /* Font size for heading 1 */
-    margin-bottom: 10px; /* Margin below heading 1 */
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
 }
 
+/* Subheading styling */
 .about-content h2 {
-    font-size: 2em; /* Font size for heading 2 */
-    margin-bottom: 10px; /* Margin below heading 2 */
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
+/* Paragraph styling */
 .about-content p {
-    font-size: 1.2em; /* Font size for paragraph */
-    line-height: 1.6; /* Line height for paragraph */
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #777777;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Responsive Styling */
+/* Button (optional for CTA) */
+.about-content .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f39c12;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
 
-/* For mobile devices */
-@media (max-width: 600px) {
-    .about-marathon {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center align items */
-        max-width: 98%; /* Increased width to 98% on mobile for less space on sides */
-    }
+.about-content .cta-button:hover {
+    background-color: #e67e22;
+}
 
-    .about-content {
-        text-align: center; /* Center align text on mobile */
-        padding: 10px; /* Reduced padding for mobile to increase width */
-        max-width: 98%; /* Limit the width to 98% for content */
-    }
+/* Responsive design */
 
+/* For screens wider than 992px (laptops) */
+@media (max-width: 1200px) {
     .about-content h1 {
-        font-size: 1.8em; /* Font size for heading 1 on mobile */
-        margin-bottom: 5px; /* Reduced margin for a tighter layout */
-    }
-
-    .marathon-image img {
-        width: 100%; /* Full width image on mobile */
-        margin-bottom: 10px; /* Margin below the image */
-        border-radius: 8px; /* Rounded corners for mobile */
+        font-size: 2.5em; /* Slightly smaller font for smaller screens */
     }
 
     .about-content h2 {
-        font-size: 1.5em; /* Font size for heading 2 on mobile */
-        margin-bottom: 10px; /* Reduced margin */
+        font-size: 1.6em;
     }
 
     .about-content p {
-        font-size: 1em; /* Font size for paragraph on mobile */
-        line-height: 1.4; /* Adjust line height for better readability */
+        font-size: 1.05em;
+    }
+
+    .marathon-image img {
+        width: 65%; /* Adjust image width */
     }
 }
 
+/* For tablet devices */
+@media (max-width: 992px) {
+    .about-marathon {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .marathon-image img {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .about-content {
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .about-content h1 {
+        font-size: 2.2em;
+    }
+
+    .about-content h2 {
+        font-size: 1.5em;
+    }
+
+    .about-content p {
+        font-size: 1em;
+    }
+
+    .about-content .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 600px) {
+    .about-content {
+        padding: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 1.8em; /* Smaller font for mobile */
+    }
+
+    .about-content h2 {
+        font-size: 1.3em;
+    }
+
+    .about-content p {
+        font-size: 0.9em;
+    }
+
+    .about-content .cta-button {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
+
+    .marathon-image img {
+        width: 100%; /* Full-width image on mobile */
+        border-radius: 12px 12px 0 0; /* Adjusted radius */
+    }
+}
+
+/* For very small screens */
+@media (max-width: 400px) {
+    .about-content {
+        padding: 15px;
+    }
+
+    .about-content h1 {
+        font-size: 1.6em;
+    }
+
+    .about-content h2 {
+        font-size: 1.2em;
+    }
+
+    .about-content p {
+        font-size: 0.85em;
+    }
+}

@@ -6,6 +6,8 @@ import Navbar from './Pages/Navbar'
 import Hero from './Pages/Hero'
 import PriceComponent from './Pages/PriceComponent'
 import Sponsors from './Pages/Sponsors'
+import AboutMarathon from './Pages/AboutMarathon'
+import AboutDirector from './Pages/AboutDirector'
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       <div style={{display:"flex", flexDirection:"column"}}>
         <Navbar/>
         <Hero/>
+        <AboutMarathon/>
+        <AboutDirector/>
         <PriceComponent/>
         <Sponsors/>
       </div>
