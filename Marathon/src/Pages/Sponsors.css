@@ -1,0 +1,80 @@
+/* Sponsors Section */
+.sponsors-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.sponsors-title {
+    font-size: 48px; /* Default font size */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-family: 'Arial Black', sans-serif; /* Change this to any desired font */
+    color: #000;
+}
+
+/* Grid for 3 columns */
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sponsors per row */
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sponsor-item {
+    padding: 10px; /* Optional: Add some padding around the image */
+}
+
+/* Specific background color for the VIT sponsor */
+.sponsor-item img {
+    width: 150px; /* Default size for other sponsors */
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on images */
+.sponsor-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Increase size of School logo */
+.school-logo img {
+    width: 300px; /* Increased size for larger screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .sponsors-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 sponsors per row on medium screens */
+    }
+
+    .sponsor-item img {
+        width: 140px; /* Adjust image size for medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .sponsors-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 sponsors per row on small screens */
+        grid-template-rows: repeat(3, auto); /* Allow 3 rows for 6 items */
+    }
+
+    .sponsor-item img {
+        width: 120px; /* Further adjust image size for small screens */
+    }
+
+    /* Increase size of School logo in phone view */
+    .school-logo img {
+        width: 200px; /* Increase size of the school logo for phone view */
+    }
+
+    /* Reduce font size for phone view */
+    .sponsors-title {
+        font-size: 24px; /* Reduced font size for smaller screens */
+    }
+}
