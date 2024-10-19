@@ -1,0 +1,101 @@
+/* General Container */
+.countdown-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;  /* Default padding for larger screens */
+    background-color: #bcbdbc;  /* Slightly lighter dark background */
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+}
+
+/* Countdown Timer Styling */
+.countdown-timer {
+    flex: 1;
+}
+
+.countdown-timer h2 {
+    font-size: 2rem;  /* Default size for laptops */
+    margin-bottom: 20px;  /* Space below heading */
+    color: #FFD700;  /* Gold color for heading */
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Default gap for larger screens */
+}
+
+.time-unit {
+    font-size: 3rem;  /* Default size for laptops */
+    background-color: #4b4a4a;  /* Darker background for time units */
+    color: #FFD700; /* Yellow color for the time numbers */
+    padding: 20px;  /* Default padding for larger screens */
+    border-radius: 10px;
+    min-width: 100px;  /* Default minimum width */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);  /* Slight shadow for depth */
+}
+
+.time-unit span {
+    display: block;
+    font-size: 0.8rem;  /* Default label size for larger screens */
+    margin-top: 10px;  /* Space between number and label */
+    color: #FFD700;  /* Yellow color for the time labels */
+}
+
+/* Logo Container */
+.logo-container {
+    display: block;
+    padding-left: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .countdown-container {
+        flex-direction: column;
+        padding: 20px;  /* Adjust padding for tablet view */
+    }
+
+    .logo-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        display: none; /* Hide the logo for tablet and phone view */
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown-container {
+        padding: 10px;  /* Further reduced padding for mobile */
+    }
+
+    .countdown-timer h2 {
+        font-size: 1rem; /* Smaller heading size for mobile */
+        margin-bottom: 5px;  /* Reduced space below heading */
+    }
+
+    .time {
+        gap: 10px;  /* Reduced gap for better fit on mobile */
+    }
+
+    .time-unit {
+        font-size: 1.5rem;  /* Smaller font size for time units on mobile */
+        padding: 5px;       /* Further reduced padding for mobile */
+        min-width: 40px;    /* Adjusted minimum width for better fit on mobile */
+    }
+
+    .time-unit span {
+        font-size: 0.5rem;  /* Smaller label size for mobile */
+        margin-top: 2px;    /* Reduced margin for mobile */
+    }
+}
