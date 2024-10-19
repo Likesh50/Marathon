@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './Pages/Navbar'
 import Hero from './Pages/Hero'
 import PriceComponent from './Pages/PriceComponent'
+import Sponsors from './Pages/Sponsors'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Navbar/>
         <Hero/>
         <PriceComponent/>
+        <Sponsors/>
       </div>
     </>
   )
