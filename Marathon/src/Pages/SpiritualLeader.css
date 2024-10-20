@@ -1,0 +1,81 @@
+.spiritual-leader-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(120deg, rgba(255, 223, 186, 0.8), rgba(255, 245, 217, 0.8)); /* Soft yellow shades */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Light overlay for a gentle touch */
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.blessing-text {
+    font-family: 'Playfair Display', serif; /* Elegant cursive font */
+    font-size: 22px; /* Font size for the blessing text */
+    color: #d4af37; /* Gold color */
+    text-align: center;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+.leader-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust max-width as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Place the image above the overlay */
+}
+
+.leader-title {
+    font-family: 'Sacramento', cursive; /* A spiritual and elegant font */
+    font-size: 28px; /* Adjust for your design */
+    color: #d4af37; /* Gold color for the title */
+    text-align: center;
+    margin-top: 15px;
+    z-index: 2; /* Place the title above the overlay */
+}
+
+.leader-description {
+    font-family: 'Arial', sans-serif; /* Use a clean, legible font */
+    font-size: 18px; /* Adjust font size */
+    color: #333; /* Dark color for better readability */
+    text-align: center;
+    margin-top: 10px;
+    z-index: 2; /* Place the description above the overlay */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .leader-title {
+        font-size: 24px;
+    }
+    
+    .leader-description, .blessing-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .leader-title {
+        font-size: 20px;
+    }
+    
+    .leader-description, .blessing-text {
+        font-size: 14px;
+    }
+}

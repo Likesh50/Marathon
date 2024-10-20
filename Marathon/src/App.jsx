@@ -9,6 +9,9 @@ import CountdownTimer from './Pages/CountdownTimer';
 import RaceCategory from './Pages/RaceCategory';
 import B from './Pages/PriceAmount1';
 import PriceAmount1 from './Pages/PriceAmount1';
+import ChampionshipComponent from './Pages/ChampionshipComponent';
+import PriceAmount2 from './Pages/PriceAmount2';
+import SpiritualLeader from './Pages/SpiritualLeader';
 
 
 function App() {
@@ -19,6 +22,7 @@ function App() {
         <div id="hero">
           <Hero />
         </div>
+        <SpiritualLeader/>
         <div id="about-marathon">
           <AboutMarathon />
         </div>
@@ -38,6 +42,9 @@ function App() {
           <Sponsors />
         </div>
         <PriceAmount1/>
+        <PriceAmount2/>
+        
+        <ChampionshipComponent/>
         <Footer />
       </div>
     </>

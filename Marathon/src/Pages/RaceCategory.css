@@ -8,10 +8,9 @@
   
   .race-title {
     font-size: 48px;
-    font-weight: bold;
     margin-bottom: 40px;
     color: #2d3436;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
     letter-spacing: 3px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
@@ -45,7 +44,7 @@
   .category-title {
     font-size: 32px;
     color: #0984e3;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;

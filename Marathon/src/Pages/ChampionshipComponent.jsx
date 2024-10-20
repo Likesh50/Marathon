@@ -1,9 +1,9 @@
 // ChampionshipComponent.js
 import React from 'react';
 import './ChampionshipComponent.css';
-import logo1 from './CH1.png'; // First logo
-import logo2 from './CH1.png'; // Second logo
-import logo3 from './CH1.png'; // Third logo (new)
+import logo1 from '../assets/CH3.png'; // First logo
+import logo2 from '../assets/CH2.png'; // Second logo
+import logo3 from '../assets/CH1.png'; // Third logo (new)
 
 const ChampionshipComponent = () => {
   return (
