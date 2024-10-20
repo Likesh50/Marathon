@@ -9,7 +9,7 @@ import bronzeTrophy from '../assets/bronze-cup.png'; // Update the path as neede
 function PriceAmount1() {
   return (
     <div className='main'>
-      <h2 className="race-category-title">RACE CATEGORY - 10K</h2>
+      <h2 className="race-category-title">8K men's</h2>
       <div className="container">
         {/* 1st Prize - Gold Trophy */}
         <div className="boxa">
