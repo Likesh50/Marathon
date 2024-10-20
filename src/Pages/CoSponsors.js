@@ -1,5 +1,5 @@
 import React from "react";
-import "./cosponsors.css"; // Import the CSS file for styling
+import './coSponsors.css';
 
 // Import images
 import sponsor1 from './tslogo1.png';
