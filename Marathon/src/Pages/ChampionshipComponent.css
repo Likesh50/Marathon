@@ -1,0 +1,54 @@
+/* ChampionshipComponent.css */
+.championship-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.championship-item {
+    margin: 0 20px; /* Add some space between the logos */
+}
+
+.logo-wrapper {
+    margin-bottom: 0;
+}
+
+.championship-logo {
+    width: 200px; /* Increased base size */
+    height: auto;
+}
+
+/* Laptop View */
+@media (min-width: 900px) {
+    .championship-logo {
+        width: 300px; /* Significantly bigger logo for laptops */
+    }
+}
+
+/* Tablet View */
+@media (min-width: 600px) and (max-width: 899px) {
+    .championship-logo {
+        width: 200px; /* Maintain the larger base size for tablets */
+    }
+}
+
+/* Phone View (increase logo size and reduce space) */
+@media (max-width: 599px) {
+    .championship-container {
+        flex-direction: row; /* Keep logos side by side */
+        justify-content: center; /* Center logos within the container */
+        flex-wrap: nowrap; /* Prevent logos from wrapping to the next line */
+    }
+
+    .championship-logo {
+        width: 140px; /* Increased logo size for phone view */
+        margin: 1px; /* Reduced margin between logos */
+    }
+
+    .championship-item {
+        margin: 0 1px; /* Further reduce margin for tighter spacing */
+        flex-grow: 0; /* Prevent items from growing beyond their natural size */
+    }
+}
