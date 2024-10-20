@@ -1,0 +1,38 @@
+.cosponsors-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .cosponsor-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cosponsor-item {
+    width: 16.66%; /* 6 logos per row for large screens */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .cosponsor-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cosponsor-item p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .cosponsor-item {
+      width: 50%; /* 2 logos per row for tablet/mobile */
+    }
+  }
+  
