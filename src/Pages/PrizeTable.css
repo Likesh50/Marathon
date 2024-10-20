@@ -1,103 +1,111 @@
 /* Container Styling */
 .prize-card-container {
-    padding: 20px;
-    background: linear-gradient(135deg, #f0f4f8, #ffffff);
-    max-width: 1200px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  /* Title Styling */
-  .prize-title {
-    font-size: 2.5rem;
-    color: #34495e;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  /* Grid Container for Cards */
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.priceContainer{
+  width: 100%;
+  background-color: rgb(245, 246, 245);
+
+}
+
+/* Title Styling */
+.prize-title {
+  font-size: 2.3rem;
+  color: #34495e;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid Container for Cards */
+.prize-card-grid {
+  display: grid;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* Individual Card Styling */
+.prize-card {
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+
+
+/* Medal Image Styling */
+.prize-medal {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+/* Rank and Prize Amount Styling */
+.prize-rank {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  background: linear-gradient(45deg, #3498db, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prize-amount {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2c3e50;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+
+/* For laptop (4 cards in the first row) */
+@media (min-width: 1024px) {
   .prize-card-grid {
-    display: grid;
-    gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
   }
-  
-  /* Individual Card Styling */
+  .prize-card:nth-child(5) {
+      grid-column: span 1;
+  }
+  .prize-card:nth-child(6) {
+      grid-column:span 1;
+  }
+  .prize-card:nth-child(7) {
+      grid-column: span 1;
+  }
+}
+
+/* For mobile (3 cards in the first row) */
+@media (max-width: 767px) {
+  .prize-card-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .prize-card:nth-child(7) {
+      grid-column: span 3;
+  }
   .prize-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      padding: 15px;
   }
-  
-  .prize-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  .prize-medal {
+      width: 60px;
+      height: 60px;
   }
-  
-  /* Rank and Prize Amount Styling */
   .prize-rank {
-    font-size: 2rem;
-    color: #007bff;
-    font-weight: 600;
-    margin-bottom: 10px;
+      font-size: 1.6rem;
   }
-  
   .prize-amount {
-    font-size: 1.5rem;
-    color: #2c3e50;
-    font-weight: 500;
+      font-size: 1.2rem;
   }
-  
-  /* Responsive Design */
-  
-  /* For laptop (4 in first row, 3 starting from the first column in the second row) */
-  @media (min-width: 1024px) {
-    .prize-card-grid {
-      grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-    }
-  
-    /* For the second row, position cards starting from the first column */
-    .prize-card:nth-child(5) {
-      grid-column: 1; /* Position the 5th card in the first column */
-    }
-  
-    .prize-card:nth-child(6) {
-      grid-column: 2; /* Position the 6th card in the second column */
-    }
-  
-    .prize-card:nth-child(7) {
-      grid-column: 3; /* Position the 7th card in the third column */
-    }
-  }
-  
-  /* For mobile (3 in first row, 3 in second row, 1 in third) */
-  @media (max-width: 767px) {
-    .prize-card-grid {
-      grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    }
-  
-    .prize-card:nth-child(7) {
-      grid-column: span 3; /* Make the 7th card span the full width */
-    }
-  
-    /* Reduce height of the card by reducing padding */
-    .prize-card {
-      padding: 15px; /* Reduce padding to make the card smaller */
-    }
-  
-    /* Optionally reduce font size in mobile view for better scaling */
-    .prize-rank {
-      font-size: 1.75rem;
-    }
-  
-    .prize-amount {
-      font-size: 1.25rem;
-    }
-  }
-  
+}

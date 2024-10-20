@@ -8,9 +8,13 @@ import Footer from './Pages/Footer';
 import RaceCategory from './Pages/RaceCategory';
 import PriceAmount1 from './Pages/PriceAmount1';
 import ChampionshipComponent from './Pages/ChampionshipComponent';
-import PriceAmount2 from './Pages/PriceAmount2';
 import SpiritualLeader from './Pages/SpiritualLeader';
 import CountdownTimerr from './Pages/CountdownTimerr';
+import Sponsorss from './Pages/Sponsorss';
+import CoSponsors from './Pages/CoSponsors';
+import Organizer from './Pages/Organizer';
+import PrizeTable from './Pages/PrizeTable';
+import TitleSponsor from './Pages/TitleSponsor';
 
 
 
@@ -34,19 +38,22 @@ function App() {
         </div>
         <div>
           <PriceAmount1/>
-          <PriceAmount2/>
+          <PrizeTable/>
         </div>
         
         <ChampionshipComponent/>
         <div id="price-component">
           <PriceComponent />
+          
         </div>
         <div id="countdown-timer">
           <CountdownTimerr/>
         </div>
         
         <div id="sponsors">
-          <Sponsors />
+          <TitleSponsor/>
+          <Sponsors/>
+          <Organizer/>
         </div>    
 
         <div id="footer">
