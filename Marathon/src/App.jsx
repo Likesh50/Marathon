@@ -11,6 +11,7 @@ import B from './Pages/PriceAmount1';
 import PriceAmount1 from './Pages/PriceAmount1';
 
 
+
 function App() {
   return (
     <>
@@ -39,6 +40,7 @@ function App() {
         </div>
         <PriceAmount1/>
         <Footer />
+        
       </div>
     </>
   );
