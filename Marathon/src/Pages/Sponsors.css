@@ -37,10 +37,6 @@
 }
 
 /* Hover effect on images */
-.sponsor-item:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
 
 /* Increase size of School logo */
 .school-logo img {
