@@ -6,12 +6,11 @@
 }
 
 .sponsors-title {
-    font-size: 48px; /* Default font size */
+    font-size: 54px; /* Default font size */
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 30px;
-    font-family: 'Arial', sans-serif;/* Updated font family */
-    color: #000;
+    color: #333;
 }
 
 /* Grid for 3 columns */
@@ -71,6 +70,6 @@
 
     /* Reduce font size for phone view */
     .sponsors-title {
-        font-size: 24px; /* Reduced font size for smaller screens */
+        font-size: 28px; /* Reduced font size for smaller screens */
     }
 }

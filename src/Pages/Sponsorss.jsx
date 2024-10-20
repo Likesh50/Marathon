@@ -2,14 +2,14 @@ import React from 'react';
 import './Sponsors.css'; // CSS file for styling
 
 // Update with correct image extensions
-import lion from './img/lion.jpg';
-import rotry from './img/rotry.png';
-import school from './img/school1.webp';
-import sri from './img/sri.png';
-import vit from './img/vit1.webp';
-import hellofm from './img/hellofm.jpg';
+import lion from '../assets/lion.jpg';
+import rotry from '../assets/rotry.png';
+import school from '../assets/school1.webp';
+import sri from '../assets/sri.png';
+import vit from '../assets/vit1.webp';
+import hellofm from '../assets/hellofm.jpg';
 
-const Sponsors = () => {
+const Sponsorss = () => {
   const sponsors = [
     { src: vit, alt: 'VIT Sponsor', special: true }, // First logo: VIT
     { src: lion, alt: 'Lion Sponsor', special: true }, // Second logo: Lion
@@ -33,4 +33,4 @@ const Sponsors = () => {
   );
 };
 
-export default Sponsors;
+export default Sponsorss;

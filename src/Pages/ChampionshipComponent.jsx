@@ -17,14 +17,15 @@ const ChampionshipComponent = () => {
       {/* Second logo */}
       <div className="championship-item">
         <div className="logo-wrapper">
-          <img src={logo2} alt="First 100 Finishers Shield Logo" className="championship-logo" />
+          <img src={logo3} alt="Third Logo" className="championship-logo" />
         </div>
       </div>
+      
 
       {/* Third logo */}
       <div className="championship-item">
         <div className="logo-wrapper">
-          <img src={logo3} alt="Third Logo" className="championship-logo" />
+          <img src={logo2} alt="First 100 Finishers Shield Logo" className="championship-logo" />
         </div>
       </div>
     </div>
