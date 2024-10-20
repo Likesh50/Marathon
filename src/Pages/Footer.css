@@ -5,6 +5,7 @@
     padding: 30px 20px; /* Default padding */
     text-align: center; /* Center text */
     position: relative; /* For positioning effects */
+    width: 100%;
 }
 
 /* Styling for the footer content */

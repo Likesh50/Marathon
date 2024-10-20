@@ -1,6 +1,6 @@
-/* ChampionshipComponent.css */
 .championship-container {
     display: flex;
+    flex-wrap: wrap; /* Allow logos to wrap */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -16,39 +16,58 @@
 }
 
 .championship-logo {
-    width: 200px; /* Increased base size */
+    width: 200px; /* Base size */
     height: auto;
 }
 
 /* Laptop View */
 @media (min-width: 900px) {
     .championship-logo {
-        width: 300px; /* Significantly bigger logo for laptops */
+        width: 300px; /* Bigger logo for laptops */
     }
 }
 
 /* Tablet View */
 @media (min-width: 600px) and (max-width: 899px) {
     .championship-logo {
-        width: 200px; /* Maintain the larger base size for tablets */
+        width: 200px; /* Maintain larger base size for tablets */
     }
 }
 
-/* Phone View (increase logo size and reduce space) */
+/* Phone View */
 @media (max-width: 599px) {
     .championship-container {
-        flex-direction: row; /* Keep logos side by side */
-        justify-content: center; /* Center logos within the container */
-        flex-wrap: nowrap; /* Prevent logos from wrapping to the next line */
-    }
-
-    .championship-logo {
-        width: 140px; /* Increased logo size for phone view */
-        margin: 1px; /* Reduced margin between logos */
+        flex-direction: row; /* Keep logos in a row layout */
+        justify-content: center; /* Center logos */
     }
 
     .championship-item {
-        margin: 0 1px; /* Further reduce margin for tighter spacing */
-        flex-grow: 0; /* Prevent items from growing beyond their natural size */
+        flex: 1 0 45%; /* Two logos per row */
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center; /* Center each logo */
+        margin: 10px 0; /* Vertical margin */
+    }
+
+    .championship-logo {
+        width: 120px; /* Adjust logo size for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .championship-item:nth-child(1) .championship-logo {
+        width: 150px; /* Make the first logo larger */
+    }
+    
+    .championship-item:nth-child(2) .championship-logo {
+        width: 130px; /* Slightly increase size of the second logo */
+    }
+
+    .championship-item:nth-child(3) {
+        flex: 1 0 100%; /* The last logo takes the full width */
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center; /* Center the last logo */
+    }
+
+    .championship-item:nth-child(3) .championship-logo {
+        width: 150px; /* Keep the third logo larger */
     }
 }

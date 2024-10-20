@@ -1,4 +1,3 @@
-// ChampionshipComponent.js
 import React from 'react';
 import './ChampionshipComponent.css';
 import logo1 from '../assets/CH3.png'; // First logo
@@ -9,7 +8,7 @@ const ChampionshipComponent = () => {
   return (
     <div className="championship-container">
       {/* First logo */}
-      <div className="championship-item">
+      <div className="championship-item logo-first">
         <div className="logo-wrapper">
           <img src={logo1} alt="Top 10 Finisher Logo" className="championship-logo" />
         </div>

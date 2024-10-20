@@ -39,6 +39,10 @@ const CountdownTimerr = () => {
     };
   }, []);
 
+  const handleRegisterClick = () => {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLScv6o_-2GkZ1FxxGWMYn03_4zOPCG2lurpbf0OXi8OxSqKUag/viewform?usp=sf_link", "_blank"); // Opens the Google Form in a new tab
+  };
+
   return (
     <div className="countdown-container">
       <div className="countdown-timer">
@@ -50,12 +54,12 @@ const CountdownTimerr = () => {
           <div className="time-unit">{timeLeft.seconds || "0"}<span>SECONDS</span></div>
         </div>
         {/* Mobile Register Button */}
-        {isMobile && <button className="register-button mobile-register-button">Register</button>}
+        {isMobile && <button className="register-button mobile-register-button" onClick={handleRegisterClick}>Register</button>}
       </div>
       <div className="logo-container">
         <img src={logo} alt="Event Logo" /> {/* Displaying the logo */}
         {/* Desktop Register Button */}
-        <button className="register-button">Register</button>
+        <button className="register-button" onClick={handleRegisterClick} >Register</button>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@
   padding: 20px; /* Adds some padding for smaller screens */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
   margin: 0px;
+  width: 100%;
 }
 
 .hero-container img {

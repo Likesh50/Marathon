@@ -17,7 +17,7 @@ import CountdownTimerr from './Pages/CountdownTimerr';
 function App() {
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "column" ,gap:"20px"}}>
+      <div style={{ display: "flex", flexDirection: "column" ,gap:"20px",width:"100%"}}>
         <Navbar />
         <div id="hero">
           <Hero />
@@ -47,10 +47,11 @@ function App() {
         
         <div id="sponsors">
           <Sponsors />
+        </div>    
+
+        <div id="footer">
+          <Footer />
         </div>        
-        
-        <Footer />
-        
       </div>
     </>
   );

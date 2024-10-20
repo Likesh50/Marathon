@@ -4,8 +4,16 @@ import './Navbar.css';
 import logo from '../assets/logo.png'; 
 
 const Navbar = () => {
+  // Function to close the navbar when a link is clicked
+  const handleLinkClick = () => {
+    const navbarToggler = document.getElementById('navbarTogglerDemo03');
+    if (navbarToggler) {
+      navbarToggler.classList.remove('show'); // Close the navbar
+    }
+  };
+
   return (
-    <nav className="navbar navbar-expand-xl navbar-light custom-navbar"> {/* Change to navbar-expand-md */}
+    <nav className="navbar navbar-expand-xl navbar-light custom-navbar">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img src={logo} alt="Brand Logo" className="brand-logo" />
@@ -26,31 +34,29 @@ const Navbar = () => {
           <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center flex-grow-1">
             <ul className="navbar-nav mb-2 mb-lg-0 text-center">
               <li className="nav-item">
-                <a className="nav-link" href="#hero">HOME</a>
+                <a className="nav-link" href="#hero" onClick={handleLinkClick}>HOME</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about-marathon">ABOUT MARATHON</a>
+                <a className="nav-link" href="#about-marathon" onClick={handleLinkClick}>ABOUT MARATHON</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about-director">ABOUT DIRECTOR</a>
+                <a className="nav-link" href="#about-director" onClick={handleLinkClick}>ABOUT DIRECTOR</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#countdown-timer">COUNTDOWN</a>
+                <a className="nav-link" href="#race-category" onClick={handleLinkClick}>RACE CATEGORY</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#price-component">PRICING</a>
+                <a className="nav-link" href="#price-component" onClick={handleLinkClick}>PRIZE MONEY</a>
+              </li>
+              
+              <li className="nav-item">
+                <a className="nav-link" href="#sponsors" onClick={handleLinkClick}>SPONSORS</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#race-category">RACE CATEGORY</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#sponsors">SPONSORS</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#footer">CONTACT</a>
+                <a className="nav-link" href="#footer" onClick={handleLinkClick}>CONTACT</a>
               </li>
             </ul>
-            <a href="YOUR_GOOGLE_FORMS_LINK" className="btn btn-register">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScv6o_-2GkZ1FxxGWMYn03_4zOPCG2lurpbf0OXi8OxSqKUag/viewform?usp=sf_link" className="btn btn-register" onClick={handleLinkClick}>
               Register
             </a>
           </div>
