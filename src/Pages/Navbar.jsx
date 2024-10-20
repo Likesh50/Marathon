@@ -56,7 +56,7 @@ const Navbar = () => {
                 <a className="nav-link" href="#footer" onClick={handleLinkClick}>CONTACT</a>
               </li>
             </ul>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScv6o_-2GkZ1FxxGWMYn03_4zOPCG2lurpbf0OXi8OxSqKUag/viewform?usp=sf_link" className="btn btn-register" onClick={handleLinkClick}>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdS9TkXk8zs7oDDA6MGkWrisCOtFOIp3hfM8fPw9wIwj5SQmg/viewform?usp=sf_link" className="btn btn-register" onClick={handleLinkClick}>
               Register
             </a>
           </div>

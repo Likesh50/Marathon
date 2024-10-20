@@ -40,7 +40,7 @@ const CountdownTimerr = () => {
   }, []);
 
   const handleRegisterClick = () => {
-    window.open("https://docs.google.com/forms/d/e/1FAIpQLScv6o_-2GkZ1FxxGWMYn03_4zOPCG2lurpbf0OXi8OxSqKUag/viewform?usp=sf_link", "_blank"); // Opens the Google Form in a new tab
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdS9TkXk8zs7oDDA6MGkWrisCOtFOIp3hfM8fPw9wIwj5SQmg/viewform?usp=sf_link", "_blank"); // Opens the Google Form in a new tab
   };
 
   return (
