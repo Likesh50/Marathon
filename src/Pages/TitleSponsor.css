@@ -24,8 +24,13 @@
   
   /* Logo styles */
   .sponsor-logo {
-    width: 210px;
-    max-width: 190px;
+    width: 250px;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .sponsor-logo1 {
+    width: 340px;
+    max-width: 280px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   

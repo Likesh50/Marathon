@@ -6,6 +6,7 @@ import sponsor3 from '../assets/cs3.png';
 import sponsor4 from '../assets/cs4.png';
 import sponsor5 from '../assets/cs5.png';
 import sponsor6 from '../assets/cs6.png';
+import sponsor7 from '../assets/sri.png';
 const Sponsors = () => {
   const sponsors = [
     { src: sponsor5, alt: 'Sri Sponsor' },
@@ -13,6 +14,7 @@ const Sponsors = () => {
     { src: sponsor4, alt: 'Rotry Sponsor' },
     { src: sponsor1, alt: 'VIT Sponsor', special: true }, // First logo: VIT
     { src: sponsor6, alt: 'Hello FM Sponsor' },
+    { src: sponsor7, alt: 'Hello FM Sponsor' },
   ];
 
   return (

@@ -12,7 +12,7 @@ const PriceComponent = () => {
     { logo: medalLogo, text: 'A dazzling finisher’s medal' },
     { logo: tshirtLogo, text: 'Official race-day T-shirt' },
     { logo: certificateLogo, text: 'Certificate for all finishers' },
-    { logo: breakfastLogo, text: 'Breakfast' }
+    { logo: breakfastLogo, text: 'Breakfast & Refreshments' }
   ];
 
   return (
