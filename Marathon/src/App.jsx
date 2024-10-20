@@ -14,6 +14,7 @@ import PriceAmount2 from './Pages/PriceAmount2';
 import SpiritualLeader from './Pages/SpiritualLeader';
 
 
+
 function App() {
   return (
     <>
@@ -46,6 +47,7 @@ function App() {
         
         <ChampionshipComponent/>
         <Footer />
+        
       </div>
     </>
   );
