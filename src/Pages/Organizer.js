@@ -2,7 +2,7 @@ import React from "react";
 import "./organizer.css"; // CSS file for styling
 
 // Import logo image
-import organizerLogo from './tslogo1.png'; // adjust the path as necessary
+import organizerLogo from '../assets/or1.png'; // adjust the path as necessary
 
 const Organizer = () => {
   return (

@@ -2,12 +2,12 @@ import React from "react";
 import './coSponsors.css';
 
 // Import images
-import sponsor1 from './tslogo1.png';
-import sponsor2 from './tslogo1.png';
-import sponsor3 from './tslogo1.png';
-import sponsor4 from './tslogo1.png';
-import sponsor5 from './tslogo1.png';
-import sponsor6 from './tslogo1.png';
+import sponsor1 from '../assets/cs1.png';
+import sponsor2 from '../assets/cs2.png';
+import sponsor3 from '../assets/cs3.png';
+import sponsor4 from '../assets/cs4.png';
+import sponsor5 from '../assets/cs5.png';
+import sponsor6 from '../assets/cs6.png';
 
 const CoSponsors = () => {
   return (
