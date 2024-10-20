@@ -37,7 +37,7 @@ function App() {
         </div>
         <div>
           <PriceAmount1/>
-          <PrizeTable/>
+
         </div>
         
         <ChampionshipComponent/>
