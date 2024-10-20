@@ -19,7 +19,7 @@
 
 /* Image styling */
 .director-image img {
-    width: 50%; /* Default image width */
+    width: 60%; /* Default image width */
     height: auto;
     margin-left: 250px;
     object-fit: cover;
@@ -62,9 +62,10 @@
 /* 1200px breakpoint (large desktops) */
 @media (max-width: 1200px) {
     .director-image img {
-        width: 45%; /* Adjust image width */
+        width: 85%; /* Adjust image width */
         margin-left: 0px;
     }
+
 
     .about-content {
         max-width: 55%;
@@ -93,10 +94,16 @@
     }
 
     .director-image img {
-        width: 80%; /* Image takes up 80% width */
+        width: 60%; /* Image takes up 80% width */
+        height: auto;
         border-radius: 12px 12px 0 0;
         margin-left: 0px;
     }
+    .about-director {
+        flex-direction: column-reverse; /* Reverse the order: image before content */
+    }
+
+
 
     .about-content {
         max-width: 90%; /* Content takes up 90% */

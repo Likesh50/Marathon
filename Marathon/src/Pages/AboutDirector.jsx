@@ -10,11 +10,9 @@ const AboutDirector = () => {
           <h1>About the Director</h1>
           <h2>Dr. M. Suresh Babu</h2>
           <p>
-            Dr. M. Suresh Babu has been serving the community with dedication and passion for over 35 years, working alongside Sri Sakthi Amma to bring positive change. His leadership and vision have been instrumental in numerous projects that focus on child protection, education, and community development.
-          </p>
+          Dr. M. Suresh Babu, the Trustee and Director of Sripuram Golden Temple and Sri Narayani Schools, has been rendering dedicated divine service for over 35 years alongside the revered Sri Sakthi Amma. A successful entrepreneur, Dr. Suresh Babu has contributed significantly to various social and spiritual causes, working closely with Sri Sakthi Amma to uplift the community.           </p>
           <p>
-            As the director, his efforts continue to inspire and uplift those around him, fostering an environment of compassion and growth. Join us in celebrating his remarkable achievements and unwavering commitment to society.
-          </p>
+          He is also a champion of environmental sustainability, having founded the "Green Sakthi" initiative, which focuses on planting trees and donating saplings to the public to promote greener surroundings. In celebration of his birthday this year, a grand marathon is being organized on November 17th, reflecting his commitment to health, well-being, and community spirit. His leadership and contributions have left a lasting impact on both the educational and social sectors.          </p>
         </div>
         <div className="director-image">
           <img src={directorImage} alt="Director" />
