@@ -39,13 +39,13 @@ function App() {
         </div>
         <div>
           <PriceAmount1/>
-
+          <ResponsiveImagesComponent/>
         </div>
         
         <ChampionshipComponent/>
         <div id="price-component">
           <PriceComponent />
-          <ResponsiveImagesComponent/>
+          
           
         </div>
         <div id="countdown-timer">
