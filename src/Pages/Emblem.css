@@ -1,0 +1,93 @@
+/* Container Styling */
+.organizer-containers {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Heading Styling */
+  h2 {
+    font-size: 2.5rem; /* Responsive font size */
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Logo Container */
+  .organizer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%; /* Ensure logo container fits within the parent */
+  }
+  
+  /* Logo Image Styling */
+  .organizer-logos img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Text Below Logo */
+  .organizer-logos p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .organizer-logos:hover p {
+    color: #007BFF; /* Change text color on hover */
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets and Medium Devices */
+  @media (min-width: 768px) {
+    h2 {
+        font-size: 3rem;
+    }
+  
+    .organizer-logo p {
+        font-size: 1.5rem;
+    }
+  }
+  
+  /* Laptops and Large Devices */
+  @media (min-width: 1024px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+  
+    .organizer-logo img {
+        width: 80%; /* Slightly smaller logo for larger screens */
+    }
+  
+    .organizer-logo p {
+        font-size: 1.6rem;
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 767px) {
+    h2 {
+        font-size: 2rem;
+    }
+  
+    .organizer-logo img {
+        width: 90%; /* Make logo take up more space */
+    }
+  
+    .organizer-logo p {
+        font-size: 1rem;
+    }
+  }
+  

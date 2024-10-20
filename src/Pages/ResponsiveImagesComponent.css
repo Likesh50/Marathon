@@ -1,0 +1,37 @@
+/* Container for both images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    padding: 20px;  
+      background-color: rgb(245, 246, 245);
+
+  }
+  
+  /* Wrapper for individual images */
+  .image-wrapper {
+    margin: 10px; /* Space between images */
+  }
+  
+  /* Make images responsive */
+  .responsive-image {
+    max-width: 100%; /* Make the image scale based on the container width */
+    height: auto; /* Maintain the image aspect ratio */
+    border-radius: 15px; /* Optional: add rounded corners */
+  }
+  
+  /* Large screens: display images side by side */
+  @media (min-width: 768px) {
+    .image-container {
+      flex-direction: row; /* Display images side by side */
+    }
+  }
+  
+  /* Small screens: stack images vertically */
+  @media (max-width: 767px) {
+    .image-container {
+      flex-direction: column; /* Stack images vertically */
+    }
+  }
+  

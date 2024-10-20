@@ -14,6 +14,8 @@ import Organizer from './Pages/Organizer';
 import PrizeTable from './Pages/PrizeTable';
 import TitleSponsor from './Pages/TitleSponsor';
 import PartnerSection from './Pages/PartnerSection';
+import Emblem from './Pages/Emblem';
+import ResponsiveImagesComponent from './Pages/ResponsiveImagesComponent';
 
 
 
@@ -43,12 +45,13 @@ function App() {
         <ChampionshipComponent/>
         <div id="price-component">
           <PriceComponent />
+          <ResponsiveImagesComponent/>
           
         </div>
         <div id="countdown-timer">
           <CountdownTimerr/>
         </div>
-        
+        <Emblem/>
         <div id="sponsors">
           <TitleSponsor/>
           <Sponsors/>
