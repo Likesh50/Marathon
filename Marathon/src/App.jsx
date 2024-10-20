@@ -7,6 +7,8 @@ import AboutDirector from './Pages/AboutDirector';
 import Footer from './Pages/Footer';
 import CountdownTimer from './Pages/CountdownTimer';
 import RaceCategory from './Pages/RaceCategory';
+import B from './Pages/PriceAmount1';
+import PriceAmount1 from './Pages/PriceAmount1';
 
 
 function App() {
@@ -35,7 +37,7 @@ function App() {
         <div id="sponsors">
           <Sponsors />
         </div>
-
+        <PriceAmount1/>
         <Footer />
       </div>
     </>
