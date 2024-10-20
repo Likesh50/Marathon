@@ -7,7 +7,7 @@ const AboutDirector = () => {
     <div className="about-director-container">
       <div className="about-director">
         <div className="about-content">
-          <h1>About the Director</h1>
+          <h1>Our Director</h1>
           <h2>Dr. M. Suresh Babu</h2>
           <p>
           Dr. M. Suresh Babu, the Trustee and Director of Sripuram Golden Temple and Sri Narayani Schools, has been rendering dedicated divine service for over 35 years alongside the revered Sri Sakthi Amma. A successful entrepreneur, Dr. Suresh Babu has contributed significantly to various social and spiritual causes, working closely with Sri Sakthi Amma to uplift the community.           </p>

@@ -1,9 +1,7 @@
 .exclusive-items {
     text-align: center;
     padding: 40px; /* Increased padding for a better look */
-    background-color: #f5f9ff; /* Light background color */
-    border-radius: 15px; /* Soft corners for the section */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    /* Subtle shadow for depth */
   }
   
   .items-grid {

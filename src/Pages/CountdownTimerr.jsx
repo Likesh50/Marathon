@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./Ct2.css";
-import logo from './logo.png';  // Importing the logo from the src/assets folder
+import "./CountdownTimerr.css";
+import logo from '../assets/logo.png';  // Importing the logo from the src/assets folder
 
-const CountdownTimer = () => {
-  const eventDate = new Date("2024-10-24T00:00:00").getTime();
+const CountdownTimerr = () => {
+  const eventDate = new Date("2024-11-17T06:00:00").getTime();
 
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
@@ -61,4 +61,4 @@ const CountdownTimer = () => {
   );
 };
 
-export default CountdownTimer;
+export default CountdownTimerr;

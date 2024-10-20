@@ -1,10 +1,11 @@
 import React from 'react';
-import './RaceCategory.css'; // Updated CSS for enhanced design
-import logo from '../assets/logo.png'; // Import your logo image
+import './RaceCategory.css'; 
+import logo from '../assets/logo.png'; 
 
 const RaceCategory = () => {
   return (
     <div className="race-category">
+      <p className="no-fee-notice"><strong>No Registration Fee</strong></p>
       <h2 className="race-title">Race Categories</h2>
       <div className="race-wrapper">
         <div className="category-card">
