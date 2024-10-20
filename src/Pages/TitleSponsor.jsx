@@ -12,7 +12,7 @@ const TitleSponsor = () => {
       </h2>
       <div className="sponsor-logos">
         <img src={logo1} alt="Sponsor 1" className="sponsor-logo" />
-        <img src={logo2} alt="Sponsor 2" className="sponsor-logo" />
+        <img src={logo2} alt="Sponsor 2"  className="sponsor-logo1" />
       </div>
     </div>
   );
