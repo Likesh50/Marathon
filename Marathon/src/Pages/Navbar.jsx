@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light custom-navbar"> {/* Change to navbar-expand-md */}
+    <nav className="navbar navbar-expand-xl navbar-light custom-navbar"> {/* Change to navbar-expand-md */}
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img src={logo} alt="Brand Logo" className="brand-logo" />

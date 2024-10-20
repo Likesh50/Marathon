@@ -18,7 +18,7 @@
 
 /* Image styling */
 .marathon-image img {
-    width: 70%; /* Larger image for larger screens */
+    width: 90%; /* Larger image for larger screens */
     height: auto;
     object-fit: cover;
     border-radius: 12px 0 0 12px; /* Smooth rounded corners */
@@ -92,7 +92,7 @@
     }
 
     .marathon-image img {
-        width: 65%; /* Adjust image width */
+        width: 100%; /* Adjust image width */
     }
 }
 
