@@ -13,6 +13,7 @@ import CountdownTimerr from './Pages/CountdownTimerr';
 import Organizer from './Pages/Organizer';
 import PrizeTable from './Pages/PrizeTable';
 import TitleSponsor from './Pages/TitleSponsor';
+import PartnerSection from './Pages/PartnerSection';
 
 
 
@@ -51,6 +52,7 @@ function App() {
         <div id="sponsors">
           <TitleSponsor/>
           <Sponsors/>
+          <PartnerSection/>
           <Organizer/>
         </div>    
 
