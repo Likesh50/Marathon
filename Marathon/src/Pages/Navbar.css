@@ -5,12 +5,25 @@
   transition: height 0.3s ease; /* Smooth transition when resizing */
 }
 
-
-
 /* Adjust brand logo size for larger screens */
 @media (min-width: 1200px) {
   .brand-logo {
     height: 80px; /* Larger logo for extra-large screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar-collapse {
+    display: none !important; /* Initially hide the navbar items */
+  }
+
+  .navbar-toggler {
+    display: block; /* Show the toggle button */
+  }
+
+  .navbar-collapse.show {
+    display: flex !important; /* Show navbar items when expanded */
+    flex-direction: column; /* Stack items vertically */
   }
 }
 
@@ -19,6 +32,20 @@
   .brand-logo {
     height: 70px; /* Slightly smaller logo for medium screens */
   }
+
+  .navbar-collapse {
+    display: none !important; /* Initially hide the navbar items */
+  }
+
+  .navbar-toggler {
+    display: block; /* Show the toggle button */
+  }
+
+  .navbar-collapse.show {
+    display: flex !important; /* Show navbar items when expanded */
+    flex-direction: column; /* Stack items vertically */
+  }
+
 }
 
 /* Adjust brand logo size for small screens (e.g., tablets in portrait mode) */
@@ -26,6 +53,8 @@
   .brand-logo {
     height: 60px; /* Smaller logo for small screens */
   }
+
+  
 }
 
 /* Adjust brand logo size for mobile devices */
@@ -33,13 +62,21 @@
   .brand-logo {
     height: 50px; /* Even smaller logo for mobile devices */
   }
+  
 }
 
 /* Center nav links and style */
+.navbar-nav {
+  justify-content: center; /* Center the navbar items */
+  flex-grow: 1; /* Allow the navbar items to grow */
+}
+
 .navbar-nav .nav-link {
   color: #2c3e50 !important;
   padding: 0.75rem 1rem;
   transition: color 0.3s ease;
+  font-family: "Playwrite GB S", serif;
+  font-optical-sizing: auto;
 }
 
 /* Hover effect for nav links */
@@ -53,9 +90,39 @@
   border: none;
 }
 
-/* Center the navbar links for medium screens and below */
-@media (max-width: 992px) {
+/* Register button styles */
+.btn-register {
+  margin-left: 20px; /* Space between nav links and register button */
+  background-color: #FFD700; /* Gold background color */
+  color: #fff; /* White text */
+  padding: 0.5rem 1rem; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for register button */
+.btn-register:hover {
+  background-color: #f9d145; /* Slightly darker gold on hover */
+}
+
+/* Responsive adjustments for register button */
+@media (max-width: 768px) {
+  .btn-register {
+    margin-left: 0; /* Remove margin for smaller screens */
+    margin-top: 10px; /* Add margin to the top */
+    padding: 0.4rem 0.8rem; /* Smaller padding for mobile */
+  }
+}
+
+/* Ensure the navbar items are aligned properly in mobile view */
+@media (max-width: 576px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center all items */
+  }
+
   .navbar-nav {
-    text-align: center;
+    margin-bottom: 10px; /* Add space between nav links and register button */
   }
 }

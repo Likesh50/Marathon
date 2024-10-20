@@ -1,0 +1,128 @@
+/* Base styles for the footer */
+.footer-container {
+    background-color: #2c3e50; /* Dark blue background */
+    color: #ecf0f1; /* Light text color */
+    padding: 30px 20px; /* Default padding */
+    text-align: center; /* Center text */
+    position: relative; /* For positioning effects */
+}
+
+/* Styling for the footer content */
+.footer-content {
+    margin-bottom: 15px; /* Space below content */
+}
+
+/* Header styling */
+.footer-content h2 {
+    font-size: 2em; /* Default header size for large screens */
+    margin-bottom: 10px; /* Space below header */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+/* Information section styling */
+.footer-info {
+    display: flex; /* Flex layout for icons and text */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    font-size: 1em; /* Default font size for large screens */
+}
+
+/* Address and phone number styling */
+.footer-info p {
+    margin: 5px 0; /* Space between lines */
+}
+
+/* Phone number styling */
+.footer-phone a {
+    color: #f39c12; /* Orange color for the link */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for links */
+.footer-phone a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* General content styling */
+.footer-general-content {
+    border-top: 1px solid #34495e; /* Separator line */
+    padding-top: 10px; /* Space above the general content */
+    font-size: 0.9em; /* Default font size */
+}
+
+/* 1200px breakpoint (large desktops) */
+@media (max-width: 1200px) {
+    .footer-container {
+        padding: 25px 15px; /* Slightly reduced padding */
+    }
+
+    .footer-content h2 {
+        font-size: 1.8em; /* Smaller header size */
+    }
+
+    .footer-info {
+        font-size: 0.95em; /* Slightly smaller font size */
+    }
+
+    .footer-general-content {
+        font-size: 0.85em; /* Slightly smaller general text */
+    }
+}
+
+/* 992px breakpoint (tablets and smaller desktops) */
+@media (max-width: 992px) {
+    .footer-container {
+        padding: 20px; /* Reduced padding */
+    }
+
+    .footer-content h2 {
+        font-size: 1.6em; /* Smaller header size */
+    }
+
+    .footer-info {
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    .footer-general-content {
+        font-size: 0.8em; /* Smaller general text */
+    }
+}
+
+/* 600px breakpoint (large mobile devices) */
+@media (max-width: 600px) {
+    .footer-container {
+        padding: 15px; /* Further reduced padding */
+    }
+
+    .footer-content h2 {
+        font-size: 1.4em; /* Smaller header for mobile */
+    }
+
+    .footer-info {
+        font-size: 0.85em; /* Smaller info size */
+    }
+
+    .footer-general-content {
+        font-size: 0.75em; /* Smaller general text */
+    }
+}
+
+/* 400px breakpoint (small mobile devices) */
+@media (max-width: 400px) {
+    .footer-container {
+        padding: 10px; /* Minimum padding */
+    }
+
+    .footer-content h2 {
+        font-size: 1.2em; /* Smaller header for small screens */
+    }
+
+    .footer-info {
+        font-size: 0.8em; /* Smallest info size */
+    }
+
+    .footer-general-content {
+        font-size: 0.7em; /* Smallest general text */
+    }
+}

@@ -1,0 +1,107 @@
+.race-category {
+    padding: 50px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Gradient background */
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .race-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #2d3436;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .race-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .category-card {
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%); /* Gradient background for cards */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  
+  .category-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+  }
+  
+  .category-title {
+    font-size: 32px;
+    color: #0984e3;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .category-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #636e72;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .race-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .category-card {
+      width: 100%; /* Full width for mobile view */
+      margin: 20px 0;
+    }
+  
+    .race-title {
+      font-size: 32px;
+    }
+  
+    .category-title {
+      font-size: 24px;
+    }
+  
+    .category-description {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category-card {
+      padding: 20px;
+    }
+  
+    .category-logo {
+      width: 160px; /* Reduce logo size for small screens */
+    }
+  
+    .race-title {
+      font-size: 28px;
+    }
+  
+    .category-title {
+      font-size: 20px;
+    }
+  
+    .category-description {
+      font-size: 14px;
+    }
+  }
+  
