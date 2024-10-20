@@ -10,8 +10,6 @@ import PriceAmount1 from './Pages/PriceAmount1';
 import ChampionshipComponent from './Pages/ChampionshipComponent';
 import SpiritualLeader from './Pages/SpiritualLeader';
 import CountdownTimerr from './Pages/CountdownTimerr';
-import Sponsorss from './Pages/Sponsorss';
-import CoSponsors from './Pages/CoSponsors';
 import Organizer from './Pages/Organizer';
 import PrizeTable from './Pages/PrizeTable';
 import TitleSponsor from './Pages/TitleSponsor';
