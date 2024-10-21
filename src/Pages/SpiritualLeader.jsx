@@ -9,7 +9,7 @@ const SpiritualLeader = () => {
       <div className="text-container">
         <p className="blessing-text">With the Divine Blessings of</p>
         <p className="blessing-text">Beloved</p>
-        <h2 className="leader-title">SRI SAKTI AMMA</h2>
+        <h2 className="leader-title">SRI SAKTHI AMMA</h2>
         <p className="leader-description">
           Divine Sri Sakthi Amma is a living Embodiment of Divine Grace, Radiating Wisdom and Compassion to all. Through Profound Spiritual Discourses, Amma has Illuminated the path for countless Devotees worldwide, guiding them toward Peace and Enlightenment.
         </p>

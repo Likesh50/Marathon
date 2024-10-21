@@ -82,4 +82,8 @@
     .text-container {
         text-align: center; /* Ensure text stays centered on mobile */
     }
+
+    .blessing-text{
+        margin-top: -20px;
+    }
 }

@@ -17,7 +17,7 @@ const PriceComponent = () => {
 
   return (
     <div className="exclusive-items">
-      <h2 style={{marginBottom:"20px"}}>Get our exclusives and much more..</h2>
+      <h2 style={{marginBottom:"80px"}}>Get our exclusives and much more..</h2>
       <div className="items-grid">
         {items.map((item, index) => (
           <div className="item" key={index}>

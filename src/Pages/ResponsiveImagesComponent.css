@@ -1,37 +1,55 @@
 /* Container for both images */
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Ensures responsiveness */
-    padding: 20px;  
-      background-color: rgb(245, 246, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 140px; /* Larger gap for bigger screens */
+  padding: 20px;
+  background-color: rgb(245, 246, 245);
+}
 
+/* Wrapper for individual images */
+.image-wrapper {
+  margin: 20px; /* Space between image wrappers for larger gaps */
+  text-align: center; /* Center the text */
+}
+
+/* Style for the text above the image */
+.image-title {
+  font-size: 28px; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space between the text and the image */
+  color: #333;
+}
+
+/* Make images responsive */
+.responsive-image {
+  max-width: 100%; /* Make the image scale based on the container width */
+  height: auto; /* Maintain the image aspect ratio */
+  border-radius: 15px; /* Optional: add rounded corners */
+}
+
+/* Large screens (desktops): display images side by side with gap */
+@media (min-width: 1025px) {
+  .image-container {
+    flex-direction: row; /* Display images side by side */
+    gap: 140px; /* Maintain larger gap for large screens */
   }
-  
-  /* Wrapper for individual images */
-  .image-wrapper {
-    margin: 10px; /* Space between images */
+}
+
+/* Tablet screens: display images in a row with reduced gap */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .image-container {
+    flex-direction: row; /* Keep images in a row for tablets */
+    gap: 40px; /* Reduce the gap for tablet screens */
   }
-  
-  /* Make images responsive */
-  .responsive-image {
-    max-width: 100%; /* Make the image scale based on the container width */
-    height: auto; /* Maintain the image aspect ratio */
-    border-radius: 15px; /* Optional: add rounded corners */
+}
+
+/* Mobile screens: stack images vertically and remove gap */
+@media (max-width: 767px) {
+  .image-container {
+    flex-direction: column; /* Stack images vertically */
+    gap: 0px; /* Remove the gap for mobile */
   }
-  
-  /* Large screens: display images side by side */
-  @media (min-width: 768px) {
-    .image-container {
-      flex-direction: row; /* Display images side by side */
-    }
-  }
-  
-  /* Small screens: stack images vertically */
-  @media (max-width: 767px) {
-    .image-container {
-      flex-direction: column; /* Stack images vertically */
-    }
-  }
-  
+}

@@ -19,9 +19,9 @@ const PartnerSection = () => {
         <img src={radioPartnerLogo} alt="Radio Partner" />
 
       </div>
-      <div className="partner-card">
-        <h2>Media Partner</h2>
-        <img src={mediaPartnerLogo} alt="Media Partner" />
+      <div className="partner-card" >
+        <h2 >Media Partner</h2>
+        <img src={mediaPartnerLogo} alt="Media Partner" style={{marginTop:"60px"}} />
 
       </div>
     </div>
