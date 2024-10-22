@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Import the logos
-import logo1 from '../assets/bodhi.png'; // Example logo for website sponsor
-import logo2 from '../assets/sky.png'; // Example logo for media sponsor
+import logo1 from '../assets/bodhi.png';
+import logo2 from '../assets/sky.png'; 
 
 const SponsorContainer = styled.div`
   text-align: center;
@@ -11,12 +10,12 @@ const SponsorContainer = styled.div`
 `;
 
 const SponsorTitles = styled.div`
-  display: flex; /* Use flexbox to align titles in a row */
-  justify-content: center; /* Center the titles horizontally */
-  gap: 100px; /* Space between the titles */
+  display: flex; 
+  justify-content: 
+  gap: 100px; 
 
   @media (max-width: 767px) {
-    gap: 40px; /* Adjust gap for smaller screens */
+    gap: 40px; 
   }
 `;
 
@@ -24,7 +23,7 @@ const SponsorTitle = styled.h3`
   font-size: 2.1rem;
   letter-spacing: 0.05em;
   color: #333;
-  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  margin-bottom: 20px; 
   text-transform: uppercase;
 
   @media (max-width: 767px) {
@@ -34,7 +33,7 @@ const SponsorTitle = styled.h3`
 
 const SponsorLogos = styled.div`
   display: flex;
-  justify-content: space-around; /* Flex around layout */
+  justify-content: space-around; 
   flex-wrap: wrap;
   gap: 50px;
 
@@ -45,7 +44,7 @@ const SponsorLogos = styled.div`
 
 const SponsorItem = styled.div`
   display: flex;
-  flex-direction: column; /* Stack title and logo vertically */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -74,13 +73,11 @@ const AnotherLogo = () => {
   return (
     <SponsorContainer>
       <SponsorLogos>
-        {/* Website Sponsor Section */}
         <SponsorItem>
           <SponsorTitle>Media Partner</SponsorTitle>
           <SponsorLogo src={logo2} alt="Website Sponsor Logo" />
         </SponsorItem>
 
-        {/* Media Sponsor Section */}
         <SponsorItem>
           <SponsorTitle>Website Partner</SponsorTitle>
           <SponsorLogo src={logo1} alt="Media Sponsor Logo" />

@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutDirector.css';
-import directorImage from '../assets/director.jpg'; // Add the correct path to the director's photo
+import directorImage from '../assets/director.jpg'; 
 
 const AboutDirector = () => {
   return (

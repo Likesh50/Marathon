@@ -1,10 +1,8 @@
-/* General container styling */
 .sponsor-container {
     text-align: center;
     padding: 40px 20px;
   }
   
-  /* Title styles */
   .sponsor-title {
     font-size: 2.1rem;
     letter-spacing: 0.05em;
@@ -13,7 +11,6 @@
     text-transform: uppercase;
   }
   
-  /* Sponsor logos container */
   .sponsor-logos {
     display: flex;
     justify-content: center;
@@ -21,7 +18,6 @@
     flex-wrap: wrap;
   }
   
-  /* Individual sponsor item container */
   .sponsor-item {
     display: flex;
     justify-content: center;
@@ -29,7 +25,6 @@
     text-align: center;
   }
   
-  /* Logo styles */
   .sponsor-logo {
     max-width: 200px;
     width: 100%;
@@ -37,9 +32,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  /* Responsive Design */
   
-  /* For large devices (laptops/desktops) */
   @media (min-width: 1024px) {
     .sponsor-title {
       font-size: 2.1rem;
@@ -50,7 +43,6 @@
     }
   }
   
-  /* For tablets */
   @media (min-width: 768px) and (max-width: 1023px) {
     .sponsor-title {
       font-size: 3rem;
@@ -61,7 +53,6 @@
     }
   }
   
-  /* For mobile devices */
   @media (max-width: 767px) {
     .sponsor-title {
       font-size: 2rem;

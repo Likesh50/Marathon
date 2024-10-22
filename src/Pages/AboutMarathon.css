@@ -1,11 +1,9 @@
-/* Base container styles */
 .about-marathon-container {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-/* Flexbox layout with max width */
 .about-marathon {
     display: flex;
     align-items: center;
@@ -16,22 +14,19 @@
     overflow: hidden;
 }
 
-/* Image styling */
 .marathon-image img {
-    width: 90%; /* Larger image for larger screens */
+    width: 90%; 
     height: auto;
     object-fit: cover;
-    border-radius: 12px 0 0 12px; /* Smooth rounded corners */
+    border-radius: 12px 0 0 12px; 
 }
 
-/* Content styling */
 .about-content {
     padding: 40px;
-    max-width: 40%; /* Adjusted to balance with image */
+    max-width: 40%;
     font-family: 'Roboto', sans-serif;
 }
 
-/* Main heading styling */
 .about-content h1 {
     font-size: 2.8em;
     font-weight: 700;
@@ -40,7 +35,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-/* Subheading styling */
 .about-content h2 {
     font-size: 1.8em;
     font-weight: 500;
@@ -49,7 +43,6 @@
     text-transform: uppercase;
 }
 
-/* Paragraph styling */
 .about-content p {
     font-size: 1.1em;
     line-height: 1.8;
@@ -58,7 +51,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Button (optional for CTA) */
 .about-content .cta-button {
     display: inline-block;
     padding: 12px 24px;
@@ -75,12 +67,10 @@
     background-color: #e67e22;
 }
 
-/* Responsive design */
 
-/* For screens wider than 992px (laptops) */
 @media (max-width: 1200px) {
     .about-content h1 {
-        font-size: 2.5em; /* Slightly smaller font for smaller screens */
+        font-size: 2.5em; 
     }
 
     .about-content h2 {
@@ -92,11 +82,10 @@
     }
 
     .marathon-image img {
-        width: 100%; /* Adjust image width */
+        width: 100%; 
     }
 }
 
-/* For tablet devices */
 @media (max-width: 992px) {
     .about-marathon {
         flex-direction: column;
@@ -132,14 +121,13 @@
     }
 }
 
-/* For mobile phones */
 @media (max-width: 600px) {
     .about-content {
         padding: 20px;
     }
 
     .about-content h1 {
-        font-size: 1.8em; /* Smaller font for mobile */
+        font-size: 1.8em; 
     }
 
     .about-content h2 {
@@ -156,12 +144,11 @@
     }
 
     .marathon-image img {
-        width: 100%; /* Full-width image on mobile */
-        border-radius: 12px 12px 0 0; /* Adjusted radius */
+        width: 100%; 
+        border-radius: 12px 12px 0 0; 
     }
 }
 
-/* For very small screens */
 @media (max-width: 400px) {
     .about-content {
         padding: 15px;

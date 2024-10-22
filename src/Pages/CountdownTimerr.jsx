@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CountdownTimerr.css";
-import logo from '../assets/logo.png';  // Importing the logo from the src/assets folder
+import logo from '../assets/logo.png'; 
 
 const CountdownTimerr = () => {
   const eventDate = new Date("2024-11-17T06:00:00").getTime();
@@ -53,12 +53,10 @@ const CountdownTimerr = () => {
           <div className="time-unit">{timeLeft.minutes || "0"}<span>MINUTES</span></div>
           <div className="time-unit">{timeLeft.seconds || "0"}<span>SECONDS</span></div>
         </div>
-        {/* Mobile Register Button */}
         {isMobile && <button className="register-button mobile-register-button" onClick={handleRegisterClick}>Register</button>}
       </div>
       <div className="logo-container">
-        <img src={logo} alt="Event Logo" /> {/* Displaying the logo */}
-        {/* Desktop Register Button */}
+        <img src={logo} alt="Event Logo" /> 
         <button className="register-button" onClick={handleRegisterClick} >Register</button>
       </div>
     </div>
