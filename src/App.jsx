@@ -16,6 +16,7 @@ import TitleSponsor from './Pages/TitleSponsor';
 import PartnerSection from './Pages/PartnerSection';
 import Emblem from './Pages/Emblem';
 import ResponsiveImagesComponent from './Pages/ResponsiveImagesComponent';
+import AnotherLogo from './Pages/AnotherLogo';
 
 
 
@@ -46,7 +47,6 @@ function App() {
         <div id="price-component">
           <PriceComponent />
           
-          
         </div>
         <div id="countdown-timer">
           <CountdownTimerr/>
@@ -57,6 +57,7 @@ function App() {
           <Sponsors/>
           <PartnerSection/>
           <Organizer/>
+          <AnotherLogo/>
         </div>    
 
         <div id="footer">

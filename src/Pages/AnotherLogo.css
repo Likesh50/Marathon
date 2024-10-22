@@ -7,34 +7,35 @@
   /* Title styles */
   .sponsor-title {
     font-size: 2.1rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
   }
-  
-  
   
   /* Sponsor logos container */
   .sponsor-logos {
     display: flex;
     justify-content: center;
-    gap: 50px; /* Default gap for smaller screens */
+    gap: 50px;
     flex-wrap: wrap;
+  }
+  
+  /* Individual sponsor item container */
+  .sponsor-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   /* Logo styles */
   .sponsor-logo {
-    width: 250px;
-    max-width: 250px;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  .sponsor-logo1 {
-    width: 340px;
-    max-width: 280px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-
   
   /* Responsive Design */
   
@@ -45,33 +46,25 @@
     }
   
     .sponsor-logo {
-      max-width: 200px;
-    }
-  
-    .sponsor-logos {
-      gap: 300px; /* Increase the gap between logos for laptops */
+      max-width: 160px;
     }
   }
   
   /* For tablets */
   @media (min-width: 768px) and (max-width: 1023px) {
     .sponsor-title {
-      font-size: 2.1rem;
+      font-size: 3rem;
     }
   
     .sponsor-logo {
-      max-width: 180px;
+      max-width: 150px;
     }
   }
   
   /* For mobile devices */
   @media (max-width: 767px) {
     .sponsor-title {
-      font-size: 2.1rem;
-    }
-  
-    .sponsor-logos {
-      gap: 35px;
+      font-size: 2rem;
     }
   
     .sponsor-logo {

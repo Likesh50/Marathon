@@ -1,92 +1,85 @@
-/* Container Styling */
-.organizer-container {
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+/* General container styling */
+.sponsor-container {
   text-align: center;
-  padding: 20px;
-  margin: 0;
+  padding: 40px 20px;
 }
 
-/* Heading Styling */
-h2 {
-  font-size: 2.5rem; /* Responsive font size */
-  margin-bottom: 20px;
+/* Title styles */
+.sponsor-title {
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
   color: #333;
+  margin-bottom: 40px;
   text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
-/* Logo Container */
-.organizer-logo {
+/* Sponsor logos container */
+.sponsor-logos {
+  display: flex;
+  justify-content: space-between; /* Ensures there is space between the logos */
+  gap: 50px; /* Default gap for all screens */
+  flex-wrap: wrap;
+}
+
+/* Individual sponsor item container */
+.sponsor-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  max-width: 100%; /* Ensure logo container fits within the parent */
+  text-align: center;
 }
 
-/* Logo Image Styling */
-.organizer-logo img {
-  max-width: 30%;
+/* Logo styles */
+.sponsor-logo {
+  max-width: 200px;
+  width: 100%;
   height: auto;
-  display: block;
-}
-
-/* Text Below Logo */
-.organizer-logo p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  color: #555;
-  transition: color 0.3s ease;
-}
-
-.organizer-logo:hover p {
-  color: #007BFF; /* Change text color on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Responsive Design */
 
-/* Tablets and Medium Devices */
-@media (min-width: 768px) {
-  h2 {
-      font-size: 3rem;
-  }
-
-  .organizer-logo p {
-      font-size: 1.5rem;
-  }
-}
-
-/* Laptops and Large Devices */
+/* For large devices (laptops/desktops) */
 @media (min-width: 1024px) {
-  h2 {
-      font-size: 3.5rem;
+  .sponsor-title {
+    font-size: 3.5rem;
   }
 
-  .organizer-logo img {
-      width: 80%; /* Slightly smaller logo for larger screens */
+  .sponsor-logos {
+    gap: 100px; /* Increased spacing between logos on larger screens */
   }
 
-  .organizer-logo p {
-      font-size: 1.6rem;
+  .sponsor-logo {
+    max-width: 160px;
   }
 }
 
-/* Mobile Devices */
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sponsor-title {
+    font-size: 3rem;
+  }
+
+  .sponsor-logos {
+    gap: 80px; /* Adjusted spacing for tablets */
+  }
+
+  .sponsor-logo {
+    max-width: 150px;
+  }
+}
+
+/* For mobile devices */
 @media (max-width: 767px) {
-  h2 {
-      font-size: 2rem;
+  .sponsor-title {
+    font-size: 2rem;
   }
 
-  .organizer-logo img {
-      width: 90%; /* Make logo take up more space */
+  .sponsor-logos {
+    gap: 40px; /* Adjusted spacing for mobile */
   }
 
-  .organizer-logo p {
-      font-size: 1rem;
+  .sponsor-logo {
+    max-width: 120px;
   }
 }

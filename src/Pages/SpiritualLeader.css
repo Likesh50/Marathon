@@ -20,15 +20,15 @@
 
 .text-container {
     text-align: center; /* Keep text center-aligned for all screens */
-    padding: 20px;
 }
 
 .blessing-text {
     font-family: 'Playfair Display', serif; 
     font-size: 30px; 
-    font-weight: 600; 
+    font-weight: 500; 
     color: #d4af37; 
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .leader-title {
@@ -37,23 +37,22 @@
     font-weight: 700;
     color: #a00203;
     margin-top: 10px;
+    text-align: center;
 }
 
 .leader-description {
-    font-family: 'Arial', sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    text-align: justify;
     color: #333;
     margin-top: 15px;
     padding: 0 20px;
 }
 
-/* Tablet and Desktop View */
-@media (min-width: 768px) {
+/* Tablet View (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
     .spiritual-leader-container {
         flex-direction: row; /* Align image to the left and content to the right */
-        align-items: center;
-        justify-content: center;
+        width: 100%;
     }
 
     .leader-image {
@@ -63,12 +62,41 @@
 
     .text-container {
         width: 50%; /* Text takes the other half */
+        text-align: left; /* Left-align text on tablets */
     }
-
-    /* No need to change text alignment, since it's already centered */
 }
 
-/* Mobile View */
+/* Desktop View (1024px and above) */
+@media (min-width: 1025px) {
+    .spiritual-leader-container {
+        flex-direction: row; /* Align image to the left and content to the right */
+        width: 100%;
+    }
+
+    .leader-image {
+        width: 40%; /* Take 40% of the width */
+        margin-right: 40px; /* Add more space between image and text */
+    }
+
+    .text-container {
+        width: 60%; /* Text takes the rest */
+        text-align: left; /* Left-align text */
+    }
+
+    .blessing-text {
+        font-size: 36px; /* Larger blessing text on desktop */
+    }
+
+    .leader-title {
+        font-size: 48px; /* Larger title on desktop */
+    }
+
+    .leader-description {
+        font-size: 20px; /* Slightly larger description text on desktop */
+    }
+}
+
+/* Mobile View (up to 767px) */
 @media (max-width: 767px) {
     .spiritual-leader-container {
         flex-direction: column; /* Stack elements vertically */
@@ -80,7 +108,8 @@
     }
 
     .text-container {
-        text-align: center; /* Ensure text stays centered on mobile */
+        text-align: center; 
+        width: 100%;
     }
 
     .blessing-text{

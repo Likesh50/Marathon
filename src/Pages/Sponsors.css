@@ -6,25 +6,24 @@
 }
 
 .sponsors-title {
-    font-size: 54px; /* Default font size */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
+    font-size: 2.1rem;
     color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 /* Grid for 3 columns */
 .sponsors-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 sponsors per row */
-    gap: 30px;
+    gap: 50px; /* Increased spacing between sponsor items */
     justify-items: center;
     align-items: center;
     padding: 0 20px;
 }
 
 .sponsor-item {
-    padding: 10px; /* Optional: Add some padding around the image */
+    padding: 20px; /* Added padding around each sponsor image */
     transition: transform 0.3s ease; /* Hover effect for scaling */
 }
 
@@ -35,8 +34,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect on images */
-
 /* Increase size of School logo */
 .school-logo img {
     width: 300px; /* Increased size for larger screens */
@@ -46,6 +43,7 @@
 @media (max-width: 1024px) {
     .sponsors-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 sponsors per row on medium screens */
+        gap: 40px; /* Adjusted gap for medium screens */
     }
 
     .sponsor-item img {
@@ -57,6 +55,7 @@
     .sponsors-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 sponsors per row on small screens */
         grid-template-rows: repeat(3, auto); /* Allow 3 rows for 6 items */
+        gap: 30px; /* Adjusted gap for small screens */
     }
 
     .sponsor-item img {

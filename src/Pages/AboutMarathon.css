@@ -9,7 +9,7 @@
 .about-marathon {
     display: flex;
     align-items: center;
-    justify-content: center;
+    text-align: justify;
     max-width: 1250px;
     background-color: #ffffff;
     border-radius: 12px;

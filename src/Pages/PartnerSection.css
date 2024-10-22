@@ -22,10 +22,11 @@
     margin-bottom: 15px;
   }
   
-  .partner-card h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
+  .partner-card h3 {
+    font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
   }
   
   .partner-card p {

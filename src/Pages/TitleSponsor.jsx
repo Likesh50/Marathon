@@ -7,9 +7,9 @@ import logo2 from '../assets/ts2.png'
 const TitleSponsor = () => {
   return (
     <div className="sponsor-container">
-      <h2 className="sponsor-title">
+      <h3 className="sponsor-title">
         TITLE <span className="sponsor-highlight">SPONSORS</span>
-      </h2>
+      </h3>
       <div className="sponsor-logos">
         <img src={logo1} alt="Sponsor 1" className="sponsor-logo" />
         <img src={logo2} alt="Sponsor 2"  className="sponsor-logo1" />

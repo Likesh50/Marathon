@@ -9,7 +9,6 @@ const Emblem = () => {
     <div className="organizer-containers">
       <div className="organizer-logos">
         <img src={organizerLogo} alt="Organizer Logo" />
-        
       </div>
     </div>
   );

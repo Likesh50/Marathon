@@ -56,12 +56,16 @@
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: 700; 
+    
 }
 
 .category-description {
     font-size: 18px;
     line-height: 1.8;
     color: #636e72;
+    text-align: justify;
+    font-weight: 600; 
 }
 
 @media (max-width: 768px) {
