@@ -60,7 +60,7 @@
 }
 
 /* Media query for large tablets like iPad Pro (12.9") and Surface Pro */
-@media (min-width: 1024px) and (max-width: 1366px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
   .hero-container {
     padding: 15px;
     height: auto; /* Allows for flexible height */

@@ -11,8 +11,8 @@ import sponsor7 from '../assets/sri.png';
 const Sponsors = () => {
   const sponsors = [
     { src: sponsor7, alt: '' },
-    { src: sponsor2, alt: '', special: true },
     { src: sponsor6, alt: '' },
+    { src: sponsor2, alt: '', special: true },
     { src: sponsor1, alt: '', special: true },
     { src: sponsor5, alt: '' },
   ];

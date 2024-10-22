@@ -56,8 +56,8 @@ function App() {
           <TitleSponsor/>
           <Sponsors/>
           <PartnerSection/>
-          <Organizer/>
           <AnotherLogo/>
+          <Organizer/>
         </div>    
 
         <div id="footer">

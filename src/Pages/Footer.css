@@ -17,7 +17,7 @@
 .footer-content h2 {
     font-size: 2em; /* Default header size for large screens */
     margin-bottom: 10px; /* Space below header */
-    text-transform: uppercase; /* Uppercase letters */
+     /* Uppercase letters */
     letter-spacing: 1px; /* Spacing between letters */
 }
 

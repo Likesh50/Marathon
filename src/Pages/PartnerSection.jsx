@@ -11,7 +11,7 @@ const PartnerSection = () => {
     <div className="partner-section-container">
       <div className="partner-card">
         <h3>Health Care Partner</h3>
-        <img src={healthCarePartnerLogo} alt="Health Care Partner" style={{maxWidth: "600px"}} />
+        <img src={healthCarePartnerLogo} alt="Health Care Partner" style={{maxWidth: "300px"}} />
 
       </div>
       <div className="partner-card">
@@ -20,7 +20,7 @@ const PartnerSection = () => {
 
       </div>
       <div className="partner-card" >
-        <h3 >Media Partner</h3>
+        <h3 >Press Partner</h3>
         <img src={mediaPartnerLogo} alt="Media Partner" style={{marginTop:"60px"}} />
 
       </div>

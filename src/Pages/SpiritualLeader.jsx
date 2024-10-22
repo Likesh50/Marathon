@@ -11,11 +11,13 @@ const SpiritualLeader = () => {
         <p className="blessing-text">Beloved</p>
         <h2 className="leader-title">SRI SAKTHI AMMA</h2>
         <p className="leader-description">
-          Divine Sri Sakthi Amma is a living Embodiment of Divine Grace, Radiating Wisdom and Compassion to all. Through Profound Spiritual Discourses, Amma has Illuminated the path for countless Devotees worldwide, guiding them toward Peace and Enlightenment.
-        </p>
-        <p className="leader-description">
-          Known for Selfless Service, Amma uplifts the needy with numerous Charitable Deeds, transforming lives across the globe. With a Harmonious blend of Tradition and Modernity, Amma inspires Universal love, offering Solace and Strength to all who seek Spiritual Truth.
-        </p>
+        Sri Sakthi Amma embodies divine grace, radiating wisdom and compassion.
+Renowned for teachings on love, compassion, and selfless service, countless
+followers have found inspiration through guidance and humanitarian efforts.
+With a focus on the importance of spiritual growth, community welfare, and
+education, numerous initiatives have been launched, including schools, healthcare
+programs, and charitable activities aimed at uplifting society.        </p>
+        
       </div>
     </div>
   );
