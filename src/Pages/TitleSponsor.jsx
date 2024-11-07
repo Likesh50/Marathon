@@ -2,7 +2,7 @@ import React from 'react';
 import './TitleSponsor.css'; // Importing the CSS file
 
 // Import the logos
-import logo1 from '../assets/ts1.png';
+import logo1 from '../assets/agarwal.png';
 import logo2 from '../assets/ts2.png'
 const TitleSponsor = () => {
   return (

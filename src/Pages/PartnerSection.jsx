@@ -3,7 +3,7 @@ import "./PartnerSection.css";
 
 // Import images for each partner
 import healthCarePartnerLogo from '../assets/school1.webp';
-import radioPartnerLogo from '../assets/hellofm.jpg';
+import radioPartnerLogo from '../assets/hellofm.png';
 import mediaPartnerLogo from '../assets/cs3.png';
 
 const PartnerSection = () => {

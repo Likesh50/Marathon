@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import logo1 from '../assets/bodhi.png';
 import logo2 from '../assets/sky.png'; 
+import logo3 from '../assets/hyd.png'; 
 
 const SponsorContainer = styled.div`
   text-align: center;
@@ -73,6 +74,10 @@ const AnotherLogo = () => {
   return (
     <SponsorContainer>
       <SponsorLogos>
+        <SponsorItem>
+          <SponsorTitle>Hydration Partner</SponsorTitle>
+          <SponsorLogo src={logo3} alt="Website Sponsor Logo" />
+        </SponsorItem>
         <SponsorItem>
           <SponsorTitle>Media Partner</SponsorTitle>
           <SponsorLogo src={logo2} alt="Website Sponsor Logo" />

@@ -3,13 +3,14 @@ import './Sponsors.css'; // CSS file for styling
 import sponsor1 from '../assets/cs1.png';
 import sponsor2 from '../assets/cs2.png';
 import sponsor3 from '../assets/cs3.png';
-import sponsor4 from '../assets/cs4.png';
+import sponsor4 from '../assets/tslogo2.png';
 import sponsor5 from '../assets/arteg.png';
 import sponsor6 from '../assets/cs6.png';
 import sponsor7 from '../assets/sri.png';
 
 const Sponsors = () => {
   const sponsors = [
+    { src: sponsor4, alt: '' },
     { src: sponsor7, alt: '' },
     { src: sponsor6, alt: '' },
     { src: sponsor2, alt: '', special: true },

@@ -8,7 +8,7 @@ const SpiritualLeader = () => {
       <img src={gnyaguruImage} alt="Gnyaguru Sri Sakti Amma" className="leader-image" />
       <div className="text-container">
         <p className="blessing-text">With the Divine Blessings of</p>
-        <p className="blessing-text">Beloved</p>
+        <p className="blessing-text">Our Beloved</p>
         <h2 className="leader-title">SRI SAKTHI AMMA</h2>
         <p className="leader-description">
         Sri Sakthi Amma embodies divine grace, radiating wisdom and compassion.

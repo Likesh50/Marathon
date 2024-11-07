@@ -11,7 +11,8 @@ const Footer = () => {
           <p><FaMapMarkerAlt /> No: 1A TKT Complex, Krishna Nagar, Vellore 632 001, TAMILNADU</p>
           <div style={{display:"flex", gap:"20px"}}>
           <p className="footer-phone"><FaPhoneAlt /> <a href="tel:7092377999">70923 77999</a></p>
-          <p className="footer-phone"><FaPhoneAlt /> <a href="tel:7092377999">0416 - 2226009</a></p>
+          <p className="footer-phone"><FaPhoneAlt /> <a href="tel:9344435111">93444 35111</a></p>
+          <p className="footer-phone"><FaPhoneAlt /> <a href="tel:7092377999">86789 51928</a></p>
           </div>
         </div>
       </div>
